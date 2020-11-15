@@ -14,5 +14,10 @@ public class DemoController {
 	public String index(@PathVariable String clienteId) {
 		return "El Numero de cliente es: " + clienteId;
 	}
+	
+	@RequestMapping(value= "/prueba", method = RequestMethod.GET)
+	public String prueba() {
+		return "Esto es una prueba " ;
+	}
 
 }
